@@ -28,3 +28,17 @@ sysctl kern.maxfiles=10240
 License information:
 
 Although the libowfat library is under GPL, Felix von Leitner agreed that the compiled binary may be distributed under the same beer ware license as the source code for opentracker. However, we like to hear from happy customers.
+
+## Buiding
+
+### For Centos7.8.2003 X64
+
+```
+yum group install "Development Tools"
+yum install libowfat-devel zlib-devel
+
+git clone git://erdgeist.org/opentracker
+cd opentracker
+make
+./opentracker
+```

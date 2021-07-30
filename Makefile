@@ -3,9 +3,9 @@
 CC?=gcc
 
 # Linux flavour
-# PREFIX?=/opt/diet
-# LIBOWFAT_HEADERS=$(PREFIX)/include
-# LIBOWFAT_LIBRARY=$(PREFIX)/lib
+PREFIX?=/usr
+LIBOWFAT_HEADERS=$(PREFIX)/include/libowfat
+LIBOWFAT_LIBRARY=$(PREFIX)/lib64
 
 # BSD flavour
 # PREFIX?=/usr/local
@@ -13,9 +13,9 @@ CC?=gcc
 # LIBOWFAT_LIBRARY=$(PREFIX)/lib
 
 # Debug flavour
-PREFIX?=..
-LIBOWFAT_HEADERS=$(PREFIX)/libowfat
-LIBOWFAT_LIBRARY=$(PREFIX)/libowfat
+#PREFIX?=..
+#LIBOWFAT_HEADERS=$(PREFIX)/libowfat
+#LIBOWFAT_LIBRARY=$(PREFIX)/libowfat
 
 BINDIR?=$(PREFIX)/bin
 STRIP?=strip
